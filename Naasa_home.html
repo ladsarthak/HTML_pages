@@ -1,0 +1,1217 @@
+<html>
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>
+        SpaceMania - Home
+    </title>
+    <style>
+        body    {
+            background-image: url(file:///C:/Users/SARTHAK/Pictures/Camera%20Roll/images.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .topnav {
+            background-color: #ff8080;
+            height: 580;
+            border-radius: 15px;
+            text-align: left;
+            margin-top: 5px;
+            margin-left: 50;
+            margin-right: 50;
+            color: midnightblue;
+        }
+        .topnav a   {
+            display: block;
+            color: #ff8080;
+            text-decoration: none;
+            padding: 13px 15px;
+            float: center;
+            text-align: center;
+            border-radius: 25px;
+        }
+        .topnav a:hover {
+            display: block;
+            background-color: white;
+            color: #00006b;
+            font-size: large;
+            font-weight: bold;
+        }
+        .sidenav    {
+            top: 35%;
+            right: 0;
+            position: fixed;
+            width: auto;
+            color: white;
+            font-size: x-large;
+        }
+        .sidenav a  {
+            color: white;
+            text-decoration: none;
+            padding: 15px 15px;
+            display: block;
+            margin-top: 0;
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 0;
+        }
+        .sidenav a:hover    {
+            color: black;
+            background-color: #d6cf48;
+        }
+        .navbar    {
+            background-color: antiquewhite;
+            height: auto;
+            border-radius: 15px;
+            text-align: left;
+            margin-top: 5px;
+            margin-left: 50;
+            margin-right: 50;
+            color: purple;
+        }
+        .navbar a   {
+            color: cadetblue;
+            display: block;
+            float: left;
+            text-decoration: none;
+            padding: 50px 15px;
+            text-align: center;
+            font-family: comic sans ms;
+        }
+        .navbar a:hover {
+            color: whitesmoke;
+            background-color: coral;
+            border-radius: 15px;
+        }
+        .navbar a:active {
+            border-radius: 25px;
+            background-color: chocolate;
+            transform: translateX(10px);
+        }
+        .main   {
+            color: aliceblue;
+            margin-bottom: 0;
+            margin-left: 300;
+            margin-right: 300;
+            height: 1%;
+            font-family: comic sans ms;
+            font-size: 15px;
+        }
+        .main input[type=text] {
+            float: left;
+            padding: 6px;
+            font-size: 17px;
+            border-radius: 35%;
+        }
+        .main a {
+            text-decoration: none;
+            display: block;
+            padding: auto;
+            border-radius: 50px;
+            float: left;
+        }
+        .button {
+            padding: 5px 15px;
+            font-size: 17px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: black;
+            background-color: white;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 5px #999;
+            
+        }
+        .button:hover {
+            background-color: whitesmoke;
+        }
+        .button:active {
+            background-color: #d7d7d7;
+            box-shadow: 0 1px #535353;
+            transform: translateY(4px);
+        }
+        .content {
+            background-color: aquamarine;
+            height: auto;
+            border-radius: 15px;
+            text-align: left;
+            margin-left: 50;
+            margin-right: 50;
+            color: #515151;
+        }
+        .content a {
+            background-color: #2c2c9f;
+            display: block;
+            float: none;
+            padding: 5px 75px;
+            color: aliceblue;
+            text-decoration: none;
+            border-radius: 15px;
+            border-color: white;
+            box-shadow: 0 10px #4e4e4e;
+        }
+        .content a:hover {
+            background-color: #2f2faf;
+        }
+        .content a:active {
+            background-color: #27278a;
+            box-shadow: 0 4px #2b2b2b;
+            transform: translateY(6px);
+        }
+        .bar {
+            border-radius: 15px;
+            background-color: khaki;
+            float: right;
+            width: 500;
+            height: 466;
+            margin-right: 20;
+            font-size: x-large;
+        }
+        .comment {
+            background-color: #0088e3;
+            color: white;
+            display: block;
+            padding: 15px 15px;
+        }
+        .iconbar {
+            bottom: 0;
+            right: 0;
+            position: fixed;
+            font-size: xx-large;
+        }
+        .iconbar a {
+            color: black;
+            text-decoration: none;
+            display: block;
+            padding: 30px 30px;
+            border-radius: 100%;
+            background-color: #d6cf48;
+        }
+        .iconbar a:hover {
+            color: white;
+            background-color: #00000000;
+        }
+        .call {
+            background-color: #00a210;
+            color: white;
+            display: block;
+            padding: 15px 15px;
+        }
+        .whatsapp {
+            background-color: #00b112;
+            color: white;
+            display: block;
+            padding: 15px 15px;
+        }
+        .globe {
+            background-color: darkolivegreen;
+            color: white;
+            display: block;
+            padding: 15px 15px;
+            float: right;
+        }
+        .globe:hover {
+            background-color: #d6cf48;
+            color: black;
+        }
+        .spaceshuttle {
+            background-color: #2d3491;
+            color: white;
+            display: block;
+            padding: 15px 15px;
+            float: right;
+        }
+        .spaceshuttle:hover {
+            background-color: #d6cf48;
+            color: black;
+        }
+        .rocket {
+            color: white;
+            display: block;
+            padding: 15px 15px;
+            float: right;
+            background-color: #a60808;
+        }
+        .rocket:hover {
+            background-color: #d6cf48;
+            color: black;
+        }
+        .home2 {
+            color: black;
+            display: block;
+            padding: 15px 15px;
+            float: right;
+            background-color: aquamarine;
+        }
+        .home2:hover {
+            background-color: #d6cf48;
+            color: black;
+        }
+        .home {
+            color: white;
+            display: block;
+            padding: 15px 15px;
+            float: right;
+        }
+        .home:hover {
+            background-color: #d6cf48;
+            color: black;
+        }
+        .bar2, .bar2 a {
+            background-color: white;
+            margin-right: 0;
+            margin-left: 0;
+            color: black;
+            font-size: 35px;
+            border-radius: 0%;
+            font-family: Calibri;
+            width: 100%;
+            text-align: center;
+        }
+        .bar2:hover, .bar2 a:hover {
+            background-color: #dedede;
+            color: black;
+        }
+        .quizbox {
+            background-color: white;
+            height: auto;
+            border-radius: 5px;
+            text-align: left;
+            margin-left: 50;
+            color: black;
+        }
+        .quizbox button {
+            display: block;
+            padding: 10px 10px;
+            background-color: forestgreen;
+            color: white;
+        }
+        .quizbox button:hover {
+            background-color: #d6cf48;
+            color: black;
+        }
+        .news {
+            bottom: 0;
+            left: 0;
+            position: fixed;
+            height: auto;
+            width: 300;
+            background-color: #d6cf48;
+            color: black;
+        }
+        .endpara {
+            background-color: #191919;
+            height: fit-content;
+            color: white;
+            border-radius: 10px;
+        }
+        .readmore {
+            display: none;
+            position: fixed;
+            z-index: 10;
+            left: 23%;
+            top: 23.5%;
+            width: 50%;
+            height: 50%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0, 0, 0, 0.773);
+            padding-top: 60px;
+            padding-left: 60px;
+            color: white;
+        }
+        .start {
+            position: fixed;
+            color: darksalmon;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: right;
+            right: 10;
+            top: 10;
+        }
+        .news button {
+            color: black;
+            background-color: white;
+        }
+        .news button:hover {
+            background-color: black;
+            color: white;
+        }
+        .close {
+            position: fixed;
+            right: 25px;
+            top: 0;
+            color: #ffffff;
+            font-size: 35px;
+            font-weight: bold;
+            display: block;
+            padding: 10px 20px;
+            border-radius: 100px;
+            background-color: #d6cf48;
+        }
+        .close:hover,
+        .close:focus {
+            color: red;
+            cursor: pointer;
+        }
+        .animate {
+            -webkit-animation: animatezoom 0.6s;
+            animation: animatezoom 0.6s
+        }
+        @-webkit-keyframes animatezoom {
+            from {-webkit-transform: scale(0)} 
+            to {-webkit-transform: scale(1)}
+        }
+        @keyframes animatezoom {
+            from {transform: scale(0)} 
+            to {transform: scale(1)}
+        }
+        .Loginform {
+            top: 50;
+            right: 0;
+            position: fixed;
+            height: auto;
+            width: 300;
+            color: black;
+        }
+        .Loginform button {
+            background-color: #d6cf48;
+            color: #000000;
+            font-family: Arial, Helvetica, sans-serif;
+            display: block;
+            padding: 20px 130px;
+            border-radius: 100px;
+        }
+        .Loginform button:hover {
+            background-color: #e0881e;
+            color: white;
+        }
+        .Login {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%; 
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0, 0, 0, 0.692);
+            padding-top: 60px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .logincontent {
+            background-color: #fefefe;
+            margin: 5% auto 15% auto;   
+            border: 1px solid #888;
+            width: 50%;
+            text-align: left;
+        }
+        .loginbtn {
+            background-color: #d6cf48;
+            color: #000000;
+            font-family: Arial, Helvetica, sans-serif;
+            display: block;
+            padding: 20px 130px;
+            border-radius: 100px;
+        }
+         .logincontent input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            background-color: #f1f1f1;
+        }
+        .logincontent2 {
+            margin-left: 10;
+            margin-right: 10;
+            margin-top: 10;
+            margin-bottom: 10;
+        }
+        .logincontent2 button {
+            display: block;
+            padding: 14px 20px;
+            width: 100%;
+            font-size: larger;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border-radius: 0%;
+        }
+        .signincontent {
+            background-color: #fefefe;
+            margin: 5% auto 15% auto;   
+            border: 1px solid #888;
+            width: 40%;
+            text-align: left;
+        }
+        .signincontent input[type=email], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            background-color: #f1f1f1;
+        }
+        .cancel {
+            background-color: rgb(175, 0, 0);
+            border-radius: 0;
+            color: white;
+            padding: 15px 30px;
+        }
+        .signinbtn {
+            background-color: #d6cf48;
+            color: #000000;
+            font-family: Arial, Helvetica, sans-serif;
+            display: block;
+            padding: 200px 130px;
+            cursor: pointer;
+        }
+        .feedback_quick {
+            background-color: #ffffffa8;
+            left: 0;
+            top: 130;
+            position: fixed;
+            width: 300;
+            height: auto;
+            text-align: center;
+        }
+        .feedback_quick:hover {
+            background-color: #eeeeeea8;
+        }
+        .feedback_quick span {
+            color: black;
+            cursor: pointer;
+        }
+        .feedback_quick span:hover {
+            color: #292929;
+        }
+        .feedback_quick span:active {
+            color: #4a4a4a;
+        }
+        .feedback_quick span:after {
+            background-color: #0088e3;
+        }
+        .o {
+            color: #00000000;
+        }
+        .endpara a {
+            color: white;
+            text-decoration: underline;
+        }
+        .endpara a:hover {
+            color: #000000;
+            background-color: #d6cf48;
+            border-radius: 0%;
+        }
+        .logincontent2 button:hover {
+            background-color: #e0881e;
+            color: white;
+        }
+        .top3web {
+            background-color: rgb(255, 255, 255);
+            color: #4894d6;
+            font-family: Calibri;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .readmore2 {
+            cursor: pointer;
+        }
+        .planetsdetails {
+            font-size: x-large;
+        }
+    </style>
+    <body>
+        <div class="start">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTScvPOkZeLv8kkhvt0ldwQuh-yF5R6BcOJsA&usqp=CAU" alt="SpaceMania icon" height="25"> <label>- A <font face="'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">SpaceMania</font> webiste</label>
+        </div>
+        <div class="sidenav">
+            <abbr title="Email:- lad.prajakta.gmail.com"><a href="#" class="comment"><i class="fa fa-envelope"></i></a></abbr>
+            <abbr title="Phone:- +919372720734"><a href="tel:+919372720734" class="call"><i class="fa fa-phone"></i></a></abbr>
+            <abbr title="Mobile:- +919820708008"><a href="tel:+919820708008" class="whatsapp"><i class="fa fa-whatsapp"></i></a></abbr>
+            <abbr title="Feedback:- lad.prajakta.gmail.com"><a href="#" class="comment"><i class="fa fa-comment"></i></a></abbr>
+        </div>
+        <div class="news">
+        <font face="Cooper black">
+            <h1>
+                    AstroNews
+                    <br>
+                <font face="monospace">
+                    India's Chandrayaan 3 mission successful!
+                </font>
+                    <hr>
+                <font face="monospace">
+                    PSLV-C57 / Aditya L1 launch successful!
+                </font>
+            </h1>
+            <h3>
+                    <button onclick="document.getElementById('id01').style.display='block'" style="width: auto;">
+                        <b>Read more</b>
+                    </button>
+            </h3>
+        </font>
+        </div>
+        <div id="id01" class="readmore animate">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
+            <h1>LVM3-M4 / Chandrayaan 3 mission successful!</h1>
+            <p>
+                India's LVM3-M4 made a majestic liftoff, pointing its nose perfectly at the target - the Moon. It made a vertical liftoff with successful booster rocket ejection.
+                <br>
+                In addition to that, it also landed on its intended point using Artificial Intelligence. India is the first country to do soft landing on the south pole of the moon. Exactly 4 hours after the landing at point 'Shivshakti', the surrounding dust created by lander had settled, and the rover came out of the lander and now it has 14 days to do its research before freezing night damages the rover.
+                <br><br><hr>
+                This is the information obtained about it as per ISRO LVM3-M4-Chandrayaan-3 Mission...<br><br>
+                <details class="readmore2">
+                    <summary>Read more</summary>
+                    August 24, 2023<br>
+                Chandrayaan-3 ROVER: Made in India. Made for the MOON! The Ch-3 Rover ramped down from the Lander and India took a walk on the moon! More updates soon.
+                <br>
+                    August 23, 2023 <br>
+                'I reached my destination and you too!': Chandrayaan-3 <br>
+                Chandrayaan-3 has successfully soft-landed on the moon. Congratulations, India!
+                <br>
+                    August 20, 2023 <br>
+                The Lander Module is in 25 km x 134 km orbit. Powered descent is expected to commence on August 23, 2023, around 1745 Hrs. IST
+                <br>
+                    August 19, 2023 <br>
+                The Lander Module is in 113 km x 157 km orbit around the moon. Second de-boosting is planned for August 20, 2023
+                <br>
+                    August 17, 2023 <br>
+                Lander Module is successfully separated from the Propulsion Module. Deboosting planned for August 18, 2023
+                <br>
+                    August 16, 2023 <br>
+                The spacecraft is in an orbit of 153 km x 163 km after the firing on August 16, 2023
+                <br>
+                    August 14, 2023 <br>
+                The mission is in the orbit circularisation phase. The spacecraft is in 151 km x 179 km orbit
+                <br>
+                    August 09, 2023 <br>
+                Chandrayaan-3's orbit is reduced to 174 km x 1437 km following a manuevre performed on August 9, 2023.
+<br>
+                August 06, 2023 <br>
+                LBN#2 is successfully completed. The spacecarft is in 170 km x 4313 km orbit around the moon.
+<br>
+                August 05, 2023 <br>
+                Chandrayaan-3 is successfully inserted into the lunar orbit. The orbit achieved is 164 km x 18074 km, as intended.
+<br>
+                August 01, 2023 <br>
+                The spacecraft is inserted into the translunar orbit. The orbit achieved is 288 km x 369328 km. Lunar-Orbit Insertion (LOI) is planned for Aug 5, 2023.
+<br>
+                July 25, 2023 <br>
+                Orbit-raising maneuver performed on July 25, 2023. Next firing (TransLunar Injection), is planned for August 1, 2023.
+<br>
+                July 22, 2023 <br>
+                The fourth orbit-raising maneuver (Earth-bound perigee firing) is completed. The spacecraft is now in a 71351 km x 233 km orbit.
+<br>
+                July 17, 2023 <br>
+                The second orbit-raising maneuver performed. The spacecraft is now in 41603 km x 226 km orbit.
+<br>
+                July 15, 2023 <br>
+                The first orbit-raising maneuver (Earthbound firing-1) is successfully performed at ISTRAC/ISRO, Bengaluru. Spacecraft is now in 41762 km x 173 km orbit.
+<br>
+                July 14, 2023 <br>
+                LVM3 M4 vehicle successfully launched Chandrayaan-3 into orbit. Chandrayaan-3, in its precise orbit, has begun its journey to the Moon. Health of the Spacecraft is normal.
+<br>
+                July 11, 2023 <br>
+                The 'Launch Rehearsal' simulating the entire launch preparation and process lasting 24 hours has been concluded.
+<br>
+                July 07, 2023 <br>
+                Vehicle electrical tests completed. Citizens are invited to witness the launch from the Launch View Gallery at SDSC-SHAR, Sriharikota.
+<br>
+                July 06, 2023 <br>
+                The launch is scheduled for July 14, 2023, at 14:35 Hrs. IST from the Second Launch Pad, SDSC-SHAR, Sriharikota.
+                <br>
+                And thus, 23 August 2023 is celebrated as 'National Space Day'.
+                <br>
+                As a conclusion, team ISRO has planned to launch 'Aditya L1' to do research of the sun.
+                </details>
+            </p>
+                <br><br><hr>
+                <p>
+                    <h1>PSLV-C57 / Aditya L1 launch successful!</h1>
+                    PSLV-C57 made an amazing launch, although this was ISRO's first ever mission to the sun and PSLV's 25th time of launch in the earth's atmosphere. <br><br><hr>
+                    This is the information obtained about it as per ISRO PSLV-C57-Aditya-L1 Mission...<br><br>
+                    <details class="readmore2">
+                        <summary>Read more</summary>
+                        September 1, 2023
+
+                        Aditya-L1 is a satellite dedicated to the comprehensive study of the Sun. It has 7 distinct payloads developed, all developed indigenously. Five by ISRO and two by Indian academic institutes in collaboration with ISRO.
+<br>
+                        Aditya in Sanskrit means the Sun. L1 here refers to Lagrange Point 1 of the Sun-Earth system. For common understanding, L1 is a location in space where the gravitational forces of two celestial bodies, such as the Sun and Earth, are in equilibrium. This allows an object placed there to remain relatively stable with respect to both celestial bodies.
+<br>
+                        Following its scheduled launch on September 2, 2023, Aditya-L1 stays Earth-bound orbits for 16 days, during which it undergoes 5 maneuvres to gain the necessary velocity for its journey. Subsequently, Aditya-L1 undergoes a Trans-Lagrangian1 insertion maneuvre, marking the beginning of its 110-day trajectory to the destination around the L1 Lagrange point. Upon arrival at the L1 point, another maneuvre binds Aditya-L1 to an orbit around L1, a balanced gravitational location between the Earth and the Sun. The satellite spends its whole mission life orbiting around L1 in an irregularly shaped orbit in a plane roughly perpendicular to the line joining the Earth and the Sun.
+<br>
+                        The strategic placement at the L1 Lagrange point ensures that Aditya-L1 can maintain a constant, uninterrupted view of the Sun. This location also allows the satellite to access solar radiation and magnetic storms before they are influenced by Earth's magnetic field and atmosphere. Additionally, the L1 point’s gravitational stability minimizes the need for frequent orbital maintenance efforts, optimizing the satellite's operational efficiency.
+<br>
+                        Quick Facts: Aditya-L1 will stay approximately 1.5 million km away from Earth, directed towards the Sun, which is about 1% of the Earth-Sun distance. The Sun is a giant sphere of gas and Aditya-L1 would study the outer atmosphere of the Sun. Aditya-L1 will neither land on the Sun nor approach the Sun any closer.
+                        <br><br>
+                        Aditya L1 shall be the first space based Indian mission to study the Sun. The spacecraft shall be placed in a halo orbit around the Lagrange point 1 (L1) of the Sun-Earth system, which is about 1.5 million km from the Earth. A satellite placed in the halo orbit around the L1 point has the major advantage of continuously viewing the Sun without any occultation/eclipses. This will provide a greater advantage of observing the solar activities and its effect on space weather in real time. The spacecraft carries seven payloads to observe the photosphere, chromosphere and the outermost layers of the Sun (the corona) using electromagnetic and particle and magnetic field detectors. Using the special vantage point L1, four payloads directly view the Sun and the remaining three payloads carry out in-situ studies of particles and fields at the Lagrange point L1, thus providing important scientific studies of the propagatory effect of solar dynamics in the interplanetary medium
+
+                        The suits of Aditya L1 payloads are expected to provide most crucial informations to understand the problem of coronal heating, coronal mass ejection, pre-flare and flare activities and their characteristics, dynamics of space weather, propagation of particle and fields etc.
+                    </details>
+                </p>
+        </div>
+        <div class="feedback_quick">
+            <font size="5" face="Calibri">
+                <label>
+                    Quick Feedback response
+                </label>
+                <br>
+                <label>
+                    <font face="Calibri">
+                        <b>
+                            Was this article helpful?
+                        </b>
+                    </font>
+                </label>
+            </font>
+            <br>
+            <br>
+            <font size="7">
+                <span title="Yes"><i class="fa fa-thumbs-up"></i></span>
+                <font class="o">
+                    o
+                </font>
+                <span title="No"><i class="fa fa-thumbs-down"></i></span>
+            </font>
+            <br>
+            <font class="o">
+                sasasasa
+            </font>
+        </div>
+        <div class="Loginform">
+            <span title="Login">
+                <button onclick="document.getElementById('id02').style.display='block'" style="width: auto;">
+                    <b>
+                        Login
+                    </b>
+                </button>
+            </span>
+            <br>
+            <span title="Sign in">
+                <button onclick="document.getElementById('id03').style.display='block'" style="left: 0; top: 10; position: fixed; padding: 20px 121px;">
+                    <b>
+                        <i class="fa fa-users"></i>
+                        Sign in
+                    </b>
+                </button>
+            </span>
+            <span title="Sign up">
+                <button onclick="document.getElementById('id04').style.display='block'" style="width: auto; left: 0; top: 70; position: fixed; padding: 20px 118.5px;">
+                    <b>
+                        <i class="fa fa-user-plus"></i>
+                        Sign up
+                    </b>
+                </button>
+            </span>
+            <span title="Menu">
+                <button onclick="document.getElementById('id05').style.display='block'" style="width: auto; padding: 15px 15px; left: 10; position: fixed; font-size: larger; border-radius: 0%; top: 317;">
+                    <b>
+                        <i class="fa fa-bars"></i> Menu
+                    </b>
+                </button>
+            </span>
+        </div>
+        <div id="id02" class="Login">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close">&times;</span>
+                <form class="logincontent animate">
+                <div class="logincontent2">
+                    <center>
+                        <img src="file:///C:/Users/SARTHAK/Pictures/Camera%20Roll/person.png" alt="Person" height="275">
+                        <br>
+                        <br>
+                        Already logged in? <span title="Click on the top left button to sign in." style="cursor: pointer; color: #4894d6; text-decoration: underline;"> Sign in</span>.
+                    </center>
+                    <font size="4">
+                        <br>
+                        <label for="uname"><b>Username</b></label>
+                        <br>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+                        <br>
+                        <br>
+                        <label for="psw"><b>Password</b></label>
+                        <br>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                        <br>
+                        <br>
+                        <label for="psw2"><span title="For verifiction"><b>Repeat Password</b></span></label>
+                        <br>
+                        <input type="password" placeholder="Re-enter Password" name="psw2" required>
+                        <br>
+                        <br>
+                        <label>
+                            <input type="checkbox" checked="checked" name="Remember"><b> Remember me</b>
+                        </label>
+                        <br>
+                        <br>
+                        <center>
+                            <button type="submit" class="loginbtn">
+                                Login
+                            </button>
+                        </center>
+                    </font>
+                </div>
+                </form>
+        </div>
+        <div id="id03" class="Login">
+            <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close">&times;</span>
+                <form class="signincontent animate">
+                <div class="logincontent2">
+                    <h1>
+                        <b>
+                            Sign in
+                        </b>
+                    </h1>
+                    <font size="4">
+                        <br>
+                        <label for="email"><b>Email</b></label>
+                        <br>
+                        <input type="email" placeholder="Enter Email" name="email" required>
+                        <br>
+                        <br>
+                        <label>
+                            <input type="checkbox" checked="checked" name="Remember"><b> Remember me</b>
+                        </label>
+                        <br>
+                        <br>
+                            <button type="submit" class="signinbtn">
+                                Sign in
+                            </button>
+                    </font>
+                </div>
+                <button onclick="document.getElementById('id03').style.display='none'" class="cancel" title="Close" style="margin-left: 10; margin-bottom: 10;">Cancel</button>
+                </form>
+        </div>
+        <div id="id04" class="Login">
+            <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close">&times;</span>
+                <form class="signincontent animate">
+                <div class="logincontent2">
+                    <h1>
+                        <b>
+                            Sign up
+                        </b>
+                    </h1>
+                    <font size="4">
+                        <br>
+                        <label for="email"><b>Email</b></label>
+                        <br>
+                        <input type="email" placeholder="Enter Email" name="email" required>
+                        <br>
+                        <br>
+                        <label for="psw"><b>Password</b></label>
+                        <br>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                        <br>
+                        <br>
+                        <label for="psw2"><span title="For verifiction"><b>Repeat Password</b></span></label>
+                        <br>
+                        <input type="password" placeholder="Re-enter Password" name="psw2" required>
+                        <br>
+                        <br>
+                        <label>
+                            <input type="checkbox" checked="checked" name="Remember"><b> Remember me</b>
+                        </label>
+                        <br>
+                        <br>
+                            <button type="submit" class="signinbtn">
+                                Sign up
+                            </button>
+                    </font>
+                </div>
+                <button onclick="document.getElementById('id04').style.display='none'" class="cancel" title="Close" style="margin-left: 10; margin-bottom: 10;">Cancel</button>
+                </form>
+        </div>
+        <div id="id05" class="Login">
+            <span onclick="document.getElementById('id05').style.display='none'" class="close" title="Close">&times;</span>
+                <form class="logincontent animate">
+                <div class="logincontent2">
+                    <h1>
+                        <b>
+                            Menu - See all links here...
+                        </b>
+                    </h1>
+                    <details>
+                        <summary>Login / Sign in / Sign up</summary>
+                        <br>
+                        <span title="Login">
+                            <button onclick="document.getElementById('id02').style.display='block'" style="width: auto;">
+                                <b>
+                                    Login
+                                </b>
+                            </button>
+                        </span>
+                        <br>
+                        <span title="Sign in">
+                            <button onclick="document.getElementById('id03').style.display='block'" style="width: auto;">
+                                <b>
+                                    Sign in
+                                </b>
+                            </button>
+                        </span>
+                        <br>
+                        <span title="Sign up">
+                            <button onclick="document.getElementById('id04').style.display='block'" style="width: auto;">
+                                <b>
+                                    Sign up
+                                </b>
+                            </button>
+                        </span>
+                    </details>
+                    <br>
+                    <details>
+                        <summary>The top 3 Webpages of Spacemania</summary>
+                        <br>
+                        <span title="For adults and the curious!"><a href="file:///D:/Sarthak/0.Personal%20Sarthak/My%20FOLDER/2023/HTML%20FILES/Naasa%20website/virusfile.html" target="_blank">
+                            <i class="fa fa-home"></i>
+                            Home
+                        </a>
+                        </span>
+                        <br>
+                        <span title="Only for children!"><a href="file:///D:/Sarthak/0.Personal%20Sarthak/My%20FOLDER/2023/HTML%20FILES/Naasa%20website/Naasa_home.html">
+                            <i class="fa fa-child"></i>
+                            Home_Kidonauts
+                        </a>
+                        </span>
+                        <br>
+                        <a href="file:///D:/Sarthak/0.Personal%20Sarthak/My%20FOLDER/2023/HTML%20FILES/Naasa%20website/Naasa_Space%20exploration.html">
+                            <i class="fa fa-rocket"></i>
+                            Space Exploration
+                        </a>
+                        <br>
+                        <a href="file:///D:/Sarthak/0.Personal%20Sarthak/My%20FOLDER/2023/HTML%20FILES/Naasa%20website/Naasa_Space%20exloration.b.html">
+                            <i class="fa fa-rocket fa-spin"></i>
+                            Space Taxis
+                        </a>
+                        <br>
+                        <a href="file:///D:/Sarthak/0.Personal%20Sarthak/My%20FOLDER/2023/HTML%20FILES/Naasa%20website/Underconstruction.html">
+                            <i class="fa fa-globe"></i>
+                            Space Explorers
+                        </a>
+                    </details>
+                </div>
+                <button onclick="document.getElementById('id04').style.display='none'" class="cancel" title="Close" style="margin-left: 10; margin-bottom: 10;">Cancel</button>
+                </form>
+        </div>
+        <div class="main">
+            <br>
+            <br>
+            <font size="7">
+                <b>
+                    <i class="fa fa-child"></i>
+                    SpaceMania | Home_Kidonauts!
+                </b>
+            </font>
+            <br>
+            <br>
+            <i class="fa fa-arrow-down"></i>
+            The <span title="Look down!" class="top3web"><b>top 3 websites</b></span> of SpaceMania
+            <i class="fa fa-arrow-down"></i>
+            <br>
+            <br>
+            <span title="For adults and the curious!"><a href="file:///D:/Sarthak/0.Personal%20Sarthak/My%20FOLDER/2023/HTML%20FILES/Naasa%20website/virusfile.html" target="_blank" class="home2">
+                <i class="fa fa-home"></i>
+                Home
+            </a>
+            </span>
+            <span title="Only for children!"><a href="file:///D:/Sarthak/0.Personal%20Sarthak/My%20FOLDER/2023/HTML%20FILES/Naasa%20website/Naasa_home.html" class="home">
+                <i class="fa fa-child"></i>
+                Home_Kidonauts
+                <i class="fa fa-caret-down"></i>
+            </a>
+            </span>
+            <a href="file:///D:/Sarthak/0.Personal%20Sarthak/My%20FOLDER/2023/HTML%20FILES/Naasa%20website/Naasa_Space%20exploration.html" class="rocket">
+                <i class="fa fa-rocket"></i>
+                Space Exploration
+            </a>
+            <a href="file:///D:/Sarthak/0.Personal%20Sarthak/My%20FOLDER/2023/HTML%20FILES/Naasa%20website/Naasa_Space%20exloration.b.html" class="spaceshuttle">
+                <i class="fa fa-rocket fa-spin"></i>
+                Space Taxis
+            </a>
+            <a href="file:///D:/Sarthak/0.Personal%20Sarthak/My%20FOLDER/2023/HTML%20FILES/Naasa%20website/Underconstruction.html" class="globe">
+                <i class="fa fa-globe"></i>
+                Space Explorers
+            </a>
+            <br>
+            <br>
+            <br>
+            <center>
+                <input type="text" onfocus="this.placeholder=''" placeholder="Search Solar System...">
+                <a href="file:///D:/Sarthak/0.Personal%20Sarthak/My%20FOLDER/2023/HTML%20FILES/Naasa%20website/Err.html"><button class="button"><i class="fa fa-search"></i></button></a>
+            </center>
+            <br>
+            <br>
+            <br>
+            <div class="bar2">
+                <a href="file:///D:/Sarthak/0.Personal%20Sarthak/My%20FOLDER/2023/HTML%20FILES/Naasa%20website/Err.html">
+                <i class="fa fa-google"></i>
+                <b>
+                    <font color="#0088e3">G</font><font color="#a60808">o</font><font color="#d6cf48">o</font><font color="#0088e3">g</font><font color="#00a210">l</font><font color="#a60808">e</font>
+                    ads
+                </b>
+                <br>
+                    <font size="5">
+                        <i class="fa fa-gift"></i>
+                        Claim your rewards!
+                    </font>
+                </a>
+            </div>
+            <br><br><br><br>
+            <div class="content">
+                <font size="7">
+                    Kids
+                </font>
+                <hr width="780">
+                <font size="6">
+                    <b>Know more about your Solar System; the Sun's family.</b>
+                    <br>
+                    <u>Where to go?</u>
+                </font>
+                <br>
+                <br>
+                <details class="planetsdetails">
+                    <summary>Planets</summary>
+                <table cellspacing="10" style="text-align: center;">
+                    <tr>
+                        <td>
+                            <span title="The Sun is the star at the center of the Solar System. It is a nearly perfect ball of hot plasma, heated to incandescence by nuclear fusion reactions in its core. The Sun radiates this energy mainly as light, ultraviolet, and infrared radiation, and is the most important source of energy for life on Earth. The Sun's radius is about 695,000 kilometers (432,000 miles), or 109 times that of Earth. Its mass is about 330,000 times that of Earth, comprising about 99.86% of the total mass of the Solar System. Roughly three-quarters of the Sun's mass consists of hydrogen, the rest is mostly helium, with much smaller quantities of heavier elements, including oxygen, carbon, neon, and iron."><a href="file:///D:/Sarthak/0.Personal%20Sarthak/My%20FOLDER/2023/HTML%20FILES/Naasa%20website/Underconstruction.html"><img src="file:///C:/Users/SARTHAK/Pictures/Camera%20Roll/sun%20image.png" height="100"><br>The Sun</a></span>
+                        </td>
+                        <td>
+                            <span title="Mercury is the first planet from the Sun and the smallest planet in the Solar System. It is a terrestrial planet with a heavily cratered surface due to the planet having no geological activity and an extremely tenuous atmosphere (called an exosphere). Despite being the smallest planet in the Solar System with a mean diameter of 4,880 km (3,030 miles), 38% of that of Earth's, Mercury is dense enough to have roughly the same surface gravity as Mars. Mercury has a dynamic magnetic field with a strength about 1% of that of Earth's and has no natural satellites."><a href="file:///D:/Sarthak/0.Personal%20Sarthak/My%20FOLDER/2023/HTML%20FILES/Naasa%20website/Underconstruction.html"><img src="file:///C:/Users/SARTHAK/Pictures/Camera%20Roll/mercury%20image.jpg" height="100"><br>Mercury</a></span>
+                        </td>
+                        <td>
+                            <span title="Venus is the second planet from the Sun. It is a rocky planet with the densest atmosphere of all the rocky bodies in the Solar System, and the only one with a mass and size that is close to that of its orbital neighbour Earth. Orbiting inferiorly (inside of Earth's orbit), it appears in Earth's sky always close to the Sun, as either a 'morning star' or an 'evening star'. While this is also true for Mercury, Venus appears much more prominently, since it is the third brightest object in Earth's sky after the Moon and the Sun, appearing brighter than any other star-like classical planet or any fixed star."><a href="file:///D:/Sarthak/0.Personal%20Sarthak/My%20FOLDER/2023/HTML%20FILES/Naasa%20website/Underconstruction.html"><img src="file:///C:/Users/SARTHAK/Pictures/Camera%20Roll/venus%20image.jpg" height="100"><br>Venus</a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span title="Earth is the third planet from the Sun and the only astronomical object known to harbor life. This is enabled by Earth being a water world, the only one in the Solar System sustaining liquid surface water. Almost all of Earth's water is contained in its global ocean, covering 70.8% of Earth's surface. The remaining 29.2% of Earth's surface is land, most of which is located in the form of continental landmasses within one hemisphere, Earth's land hemisphere. Most of Earth's land is somewhat humid and covered by vegetation, while large sheets of ice at Earth's polar deserts retain more water than Earth's groundwater, lakes, rivers and atmospheric water together. Earth's land is part of Earth's crust, consisting of several slowly moving tectonic plates, which interact to produce mountain ranges, volcanoes, and earthquakes. Inside Earth's crust is a liquid outer core that generates the magnetosphere, deflecting most of the destructive solar winds and cosmic radiation."><a href="file:///D:/Sarthak/0.Personal%20Sarthak/My%20FOLDER/2023/HTML%20FILES/Naasa%20website/Underconstruction.html"><img src="file:///C:/Users/SARTHAK/Pictures/Camera%20Roll/earth%20image.jpg" height="100"><br>Earth</a></span>
+                        </td>
+                        <td>
+                            <span title="Mars is the fourth planet and the furthest terrestrial planet from the Sun. The reddish color of its surface is due to finely grained iron(III) oxide dust in the soil, giving it the nickname 'the Red Planet'. Mars's radius is second smallest among the planets in the Solar System at 3,389.5 km (2,106 mi). The Martian dichotomy is visible on the surface: on average, the terrain on Mars's northern hemisphere is flatter and lower than its southern hemisphere. Mars has a thin atmosphere made primarily of carbon dioxide and two irregularly shaped natural satellites: Phobos and Deimos. Geologically, Mars is fairly active, with dust devils sweeping across the landscape and marsquakes (Martian analog to earthquakes) trembling underneath the ground. The surface of Mars hosts a large shield volcano (Olympus Mons) and one of the largest canyons in the Solar System (Valles Marineris)."><a href="file:///D:/Sarthak/0.Personal%20Sarthak/My%20FOLDER/2023/HTML%20FILES/Naasa%20website/Underconstruction.html"><img src="file:///C:/Users/SARTHAK/Pictures/Camera%20Roll/mars%20image.jpg" height="100"><br>Mars</a></span>
+                        </td>
+                        <td>
+                            <span title="Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass more than two and a half times that of all the other planets in the Solar System combined, and slightly less than one one-thousandth the mass of the Sun. It is orbiting the Sun at a distance of 5.20 AU (778.5 Gm) with an orbital period of 11.86 years. Jupiter is the third brightest natural object in the Earth's night sky after the Moon and Venus, and it has been observed since prehistoric times. It was named after Jupiter, the chief deity of ancient Roman religion."><a href="file:///D:/Sarthak/0.Personal%20Sarthak/My%20FOLDER/2023/HTML%20FILES/Naasa%20website/Underconstruction.html"><img src="file:///C:/Users/SARTHAK/Pictures/Camera%20Roll/jupiter%20image.jpg" height="100"><br>Jupiter</a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span title="Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth.[26][27] It has only one-eighth the average density of Earth, but is over 95 times more massive. Saturn's interior is thought to be composed of a rocky core, surrounded by a deep layer of metallic hydrogen, an intermediate layer of liquid hydrogen and liquid helium, and finally, a gaseous outer layer. Saturn has a pale yellow hue due to ammonia crystals in its upper atmosphere. An electrical current within the metallic hydrogen layer is thought to give rise to Saturn's planetary magnetic field, which is weaker than Earth's, but which has a magnetic moment 580 times that of Earth due to Saturn's larger size. Saturn's magnetic field strength is around one-twentieth of Jupiter's. The outer atmosphere is generally bland and lacking in contrast, although long-lived features can appear."><a href="file:///D:/Sarthak/0.Personal%20Sarthak/My%20FOLDER/2023/HTML%20FILES/Naasa%20website/Underconstruction.html"><img src="file:///C:/Users/SARTHAK/Pictures/Camera%20Roll/saturn%20image.jpg" height="45"><br>Saturn</a></span>
+                        </td>
+                        <td>
+                            <span title="Uranus is the seventh planet from the Sun and is a gaseous cyan ice giant. Most of the planet is made out of water, ammonia, and methane in a supercritical phase of matter, which in astronomy is called 'ice' or volatiles. The planet's atmosphere has a complex layered cloud structure and has the lowest minimum temperature of 49 K (−224 °C; −371 °F) out of all Solar System's planets. It has a marked axial tilt of 97.8° with a retrograde rotation rate of 17 hours. This means that in an 84 Earth years orbital period around the Sun, its poles get around 42 years of continuous sunlight, followed by 42 years of continuous darkness."><a href="file:///D:/Sarthak/0.Personal%20Sarthak/My%20FOLDER/2023/HTML%20FILES/Naasa%20website/Underconstruction.html"><img src="file:///C:/Users/SARTHAK/Pictures/Camera%20Roll/uranus%20image2.jpg" height="100"><br>Uranus</a></span>
+                        </td>
+                        <td>
+                            <span title="Neptune is the eighth planet from the Sun and the farthest IAU-recognized planet in the Solar System. It is the fourth-largest planet in the Solar System by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, and slightly more massive than its near-twin Uranus. Neptune is denser and physically smaller than Uranus because its greater mass causes more gravitational compression of its atmosphere. Being composed primarily of gases and liquids, it has no well-defined solid surface. The planet orbits the Sun once every 164.8 years at an average distance of 30.1 astronomical units (4.5 billion kilometres; 2.8 billion miles). It is named after the Roman god of the sea and has the astronomical symbol ♆, representing Neptune's trident."><a href="file:///D:/Sarthak/0.Personal%20Sarthak/My%20FOLDER/2023/HTML%20FILES/Naasa%20website/Underconstruction.html"><img src="file:///C:/Users/SARTHAK/Pictures/Camera%20Roll/neptune%20image2.jpg" height="100"><br>Neptune</a></span>
+                        </td>
+                    </tr>
+                </table>
+                </details>
+                <details class="planetsdetails">
+                    <summary>Dwarf planets</summary>
+                <table cellspacing="10" style="text-align: center;">
+                    <tr>
+                        <td>
+                            <span title="Pluto is a dwarf planet in the Kuiper belt, a ring of bodies beyond the orbit of Neptune. It is the ninth-largest and tenth-most-massive known object to directly orbit the Sun. It is the largest known trans-Neptunian object by volume, by a small margin, but is slightly less massive than Eris. Like other Kuiper belt objects, Pluto is made primarily of ice and rock and is much smaller than the inner planets. Pluto has only one sixth the mass of Earth's moon, and one third its volume. Pluto has a moderately eccentric and inclined orbit, ranging from 30 to 49 astronomical units (4.5 to 7.3 billion kilometers; 2.8 to 4.6 billion miles) from the Sun. Light from the Sun takes 5.5 hours to reach Pluto at its orbital distance of 39.5 AU (5.91 billion km; 3.67 billion mi). Pluto's eccentric orbit periodically brings it closer to the Sun than Neptune, but a stable orbital resonance prevents them from colliding."><a href="" height="100"><br>Pluto</a></span>
+                        </td>
+                        <td>
+                            <span title="Eris is the most massive and second-largest known dwarf planet in the Solar System. It is a trans-Neptunian object (TNO) in the scattered disk and has a high-eccentricity orbit. Eris was discovered in January 2005 by a Palomar Observatory–based team led by Mike Brown and verified later that year. In September 2006, it was named after the Greco–Roman goddess of strife and discord. Eris is the ninth-most massive known object orbiting the Sun and the sixteenth-most massive overall in the Solar System (counting moons). It is also the largest known object in the solar system that has not been visited by a spacecraft. Eris has been measured at 2,326 ± 12 kilometers (1,445 ± 7 mi) in diameter;[12] its mass is 0.28% that of the Earth and 27% greater than that of Pluto, although Pluto is slightly larger by volume, both having a surface area that is comparable to the area of Russia or Antarctica."><a href="" height="100"><br>Eris</a></span>
+                        </td>
+                    </tr>
+                </table>
+                </details>
+                    <details class="planetsdetails">
+                        <summary>Moons</summary>
+                <table cellspacing="10" style="text-align: center;">
+                    <tr>
+                        <td>
+                            <span title="The Moon is Earth's only natural satellite. Its diameter is about one-quarter of Earth's (comparable to the width of Australia), making it the fifth largest satellite in the Solar System and the largest and most massive relative to its parent planet. It is larger than all known dwarf planets in the Solar System. The Moon is a planetary-mass object with a differentiated rocky body, making it a satellite planet under the geophysical definitions of the term. It lacks any significant atmosphere, hydrosphere, or magnetic field. Its surface gravity is about one-sixth of Earth's at 0.1654 g—Jupiter's moon Io is the only satellite in the Solar System known to have a higher surface gravity and density."><a href="" height="100"><br>Moon</a></span>
+                        </td>
+                        <td>
+                            <span title="Phobos is the innermost and larger of the two natural satellites of Mars, the other being Deimos. The two moons were discovered in 1877 by American astronomer Asaph Hall. It is named after Phobos, the Greek god of fear and panic, who is the son of Ares (Mars) and twin brother of Deimos. Phobos is a small, irregularly shaped object with a mean radius of 11 km (7 miles). Phobos orbits 6,000 km (3,700 mi) from the Martian surface, closer to its primary body than any other known planetary moon. It orbits Mars much faster than Mars rotates and completes an orbit in just 7 hours and 39 minutes. As a result, from the surface of Mars it appears to rise in the west, move across the sky in 4 hours and 15 minutes or less, and set in the east, twice each Martian day."><a href="" height="100"><br>Phobos</a></span>
+                        </td>
+                        <td>
+                            <span title="Deimos is the smaller and outermost of the two natural satellites of Mars, the other being Phobos. Deimos has a mean radius of 6.2 km (3.9 miles) and takes 30.3 hours to orbit Mars. Deimos is 23,460 km (14,580 miles) from Mars, much farther than Mars' other moon, Phobos. It is named after Deimos, the Ancient Greek god and personification of dread and terror."><a href="" height="100"><br>Deimos</a></span>
+                        </td>
+                    </tr>
+                </table>
+                </details>
+                <br>
+                <br>
+            </div>
+            <br>
+            <div class="quizbox">
+                <h1>
+                    Quiz time!
+                </h1>
+                <h2>
+                    1) How many planets are there in the Solar System?
+                </h2>
+                <h3>
+                    <input type="radio" name="q1">
+                    ten
+                </h3>
+                <h3>
+                    <input type="radio" name="q1">
+                    eight
+                </h3>
+                <h3>
+                    <input type="radio" name="q1">
+                    hundred
+                </h3>
+                <h3>
+                    <input type="radio" name="q1">
+                    five
+                </h3>
+                <abbr title="Ans:- eight"><button>Hover me to check your answer.</button></abbr>
+            </div>
+            <br>
+            <div class="bar2">
+                <a href="file:///D:/Sarthak/0.Personal%20Sarthak/My%20FOLDER/2023/HTML%20FILES/Naasa%20website/Err.html">
+                <i class="fa fa-google"></i>
+                <b>
+                    <font color="#0088e3">G</font><font color="#a60808">o</font><font color="#d6cf48">o</font><font color="#0088e3">g</font><font color="#00a210">l</font><font color="#a60808">e</font>
+                    ads
+                </b>
+                <br>
+                    <font size="5">
+                        <i class="fa fa-gift"></i>
+                        Claim your rewards!
+                    </font>
+                </a>
+            </div>
+            <br><br><br><br>
+            <div class="navbar">
+                <font size="6">
+                    <u>How to go?</u>
+                </font>
+                <center>
+                <table cellspacing="50" style="text-align: center;">
+                    <td>
+                        <abbr title="I have taken you to space!">
+                        <a href="file:///D:/Sarthak/0.Personal%20Sarthak/My%20FOLDER/2023/HTML%20FILES/Naasa%20website/Naasa_Space%20exloration.b.html">
+                            <img src="C:\Users\SARTHAK\Pictures\Camera Roll\space shuttle.jpg">
+                            <br>
+                                Space Shuttle
+                        </a>
+                        </abbr>
+                    </td>
+                    <td>
+                        <abbr title="I will take you or your robots to space!">
+                        <a href="file:///D:/Sarthak/0.Personal%20Sarthak/My%20FOLDER/2023/HTML%20FILES/Naasa%20website/Naasa_Space%20exploration.html">
+                            <img src="C:\Users\SARTHAK\Pictures\Camera Roll\rocket.jpg">
+                            <br>
+                                Rocket
+                        </a>
+                        </abbr>
+                    </td>
+                </table>
+                </center>
+            </div>
+            <br>
+            <div class="quizbox">
+                <h1>
+                    Quiz time!
+                </h1>
+                <h2>
+                    2) Which is the only reusable spacecraft that has ever been to space?
+                </h2>
+                <h3>
+                    <input type="radio" name="q2">
+                    space shuttle
+                </h3>
+                <h3>
+                    <input type="radio" name="q2">
+                    rocket
+                </h3>
+                <h3>
+                    <input type="radio" name="q2">
+                    asteroid
+                </h3>
+                <h3>
+                    <input type="radio" name="q2">
+                    aeroplane
+                </h3>
+                <abbr title="Ans:- space shuttle"><button>Hover me to check your answer.</button></abbr>
+            </div>
+            <br>
+            <div class="topnav">
+                <font size="6">
+                    <u>Where to live?</u>
+                </font>
+                <br>
+                <span title="The International Space Station (ISS) is the largest modular space station in low Earth orbit. The project involves five space agencies: the United States' NASA, Russia's Roscosmos, Japan's JAXA, Europe's ESA, and Canada's CSA. The ownership and use of the space station is established by intergovernmental treaties and agreements. The station serves as a microgravity and space environment research laboratory in which scientific research is conducted in astrobiology, astronomy, meteorology, physics, and other fields. The ISS is suited for testing the spacecraft systems and equipment required for possible future long-duration missions to the Moon and Mars. The ISS programme evolved from the Space Station Freedom, a 1984 American proposal conceived by Ronald Reagan to construct a permanently crewed Earth-orbiting station, and the contemporaneous Soviet/Russian Mir-2 proposal from 1976 with similar aims.">
+                    <a href="file:///D:/Sarthak/0.Personal%20Sarthak/My%20FOLDER/2023/HTML%20FILES/Naasa%20website/Underconstruction.html">
+                        <img src="C:\Users\SARTHAK\Pictures\Camera Roll\iss image.jpg" height="500">
+                        <br>
+                        International Space Station (ISS)
+                    </a>
+                </span>
+            </div>
+            <br>
+            <div class="bar2">
+                <a href="file:///D:/Sarthak/0.Personal%20Sarthak/My%20FOLDER/2023/HTML%20FILES/Naasa%20website/Err.html">
+                <i class="fa fa-google"></i>
+                <b>
+                    <font color="#0088e3">G</font><font color="#a60808">o</font><font color="#d6cf48">o</font><font color="#0088e3">g</font><font color="#00a210">l</font><font color="#a60808">e</font>
+                    ads
+                </b>
+                <br>
+                    <font size="5">
+                        <i class="fa fa-gift"></i>
+                        Claim your rewards!
+                    </font>
+                </a>
+            </div>
+            <br><br><br><br>
+            <div class="quizbox">
+                <h1>
+                    Quiz time!
+                </h1>
+                <h2>
+                    3) What does the ISS looks like from the naked eye?
+                </h2>
+                <h3>
+                    <input type="radio" name="q3">
+                    An eagle
+                </h3>
+                <h3>
+                    <input type="radio" name="q3">
+                    An aeroplane
+                </h3>
+                <h3>
+                    <input type="radio" name="q3">
+                    A bright star
+                </h3>
+                <h3>
+                    <input type="radio" name="q3">
+                    A cute cat
+                </h3>
+                <abbr title="Ans:- A bright star"><button>Hover me to check your answer.</button></abbr>
+            </div>
+            <br>
+        <abbr title="Back to top">
+            <div class="iconbar">
+                    <a href="">
+                        <i class="fa fa-arrow-up"></i>
+                    </a>
+            </div>
+        </abbr>
+        <div class="endpara">
+            <address>
+                Written by Sarthak Lad.<br>
+                Visit me at:<br>
+                (As in the email button on the right)<br>
+                Written from India<hr>
+                Credits:-<br>
+                <a href="https://fontawesome.com/search" target="_blank">Font Awesome <i class="fa fa-font-awesome"></i></a><br>
+                <a href="https://www.isro.gov.in/Chandrayaan3.html" target="_blank">ISRO Chandrayaan 3</a><br>
+                <a href="https://spaceplace.nasa.gov/en/search/kids/" target="_blank">Kids | NASA Space Place</a><br>
+                <a href="https://codehtml.online/#editor" target="_blank">CodeHTML.online <i class="fa fa-html5"></i></a><br>
+                <a href="https://www.w3schools.com/html/default.asp" target="_blank">w3schools</a><br>
+                <a href="https://scratch.mit.edu/projects/editor/?tutorial=getStarted" target="_blank">Scratch 3.0</a><br>
+                <a href="https://www.youtube.com" target="_blank">Youtube <i class="fa fa-youtube"></i></a><br>
+            </address>
+        </div>
+    </body>
+</html>
